@@ -1,0 +1,115 @@
+*{box-sizing: border-box;}
+html,body{padding: 0;margin: 0;
+	font-family: 
+}
+span{
+	margin: auto;
+	padding-left: 80px;
+
+}
+
+/*p{
+	font-size: 20%;
+	}*/
+/*li{
+	font-size: 100%;
+	}*/
+	h2{
+		margin-left: 70px;
+
+	}
+	h3{
+		font-family: 'Shrikhand', cursive;
+		
+	}
+	h3{
+		margin-right: auto;
+		font-size: 40px;
+		line-height: 48px;
+		letter-spacing: 1.4px;
+	}
+	body{font-family: arial,Tahoma; font-size: 17px;}
+	li{ padding-top: 7px; list-style: none;}
+	a{text-decoration: none;
+		color: black;}
+		.head>ul{padding-left: 60px;}
+		.head>ul>li{float: left; padding: 5px 30px; position: relative;}
+		.head>ul>li>a{text-decoration: none;}
+		.head>ul>li>ul>li{padding: 10px 10px; border: 1px solid#CDCDCD;}
+		.head>ul>li>ul{ padding: 0;display: none; position: absolute; top: 59px;width: 162px;background-color: #FFFFFF;}
+		.search{
+			padding-left: 60px;
+			width: 222px;
+			margin-left: 70px;
+			margin-top: 76px;
+			color: #66737c;
+			padding: 13px 0;
+			padding-left: 26px;
+			background: url(img/kihnup.png) no-repeat #fff;
+			background-size: 16px 16px;
+			background-position: 0 14px;
+		}
+		.head{
+			max-width: 100%;
+			height: 78px;
+			max-height: 400px;
+			background-color: #FFFFFF;
+			border: 0.5px solid #CDCDCD;
+		}
+		.left>ul>li{padding: 14px 30px; }
+		.left>li{padding: 0px 70px;}
+		.headcontent{
+			padding-left: 30px;
+			width: 80%;
+			background-color: #FFFFFF;
+			height: 150px;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 40px;
+			line-height: 48px;
+			letter-spacing: 1.4px;
+		}
+		.left{
+			width: 25%;
+			max-width: 500px;
+			height: 950px;
+			background-color: #FFFFFF;
+			border: 0.5px solid #CDCDCD;
+			float: left;
+		}
+		.content{
+			width: 75%;
+			height: 950px;
+			background-color: #FFFFFF;
+			border: 0.5px solid #CDCDCD;
+			float: left;
+		}
+		img{
+			width: 290px;
+			height: 199px;
+			max-width: 300px;
+		}
+		.box1{
+			max-width: 300px;
+			padding: 4px;
+			margin-left: 25px;
+			margin-top: 20px;
+			width: 300px;
+			height: 230px;
+			background-color: #FFFFFF;
+			border: 0.5px solid #CDCDCD;
+			float: left;
+		}		
+
+		.box1:hover img{
+			transform: translate(0, -5px);
+			box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2)
+		}
+
+		.footer{
+			float: left;
+			width: 100%;
+			height: 150px;
+			background-color: #FFFFFF;
+			border: 0.5px solid #CDCDCD;
+		}
