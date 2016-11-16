@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function DOM</title>
+	<meta charset="utf-8" >
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		function change_Fontsize(){
+			document.getElementById("content").style.fontSize = '20px';
+		}
+		function increase_FontSize(){
+			document.getElementById("p1").style.fontSize='21px';
+		}
+		function decrease_FontSize(){
+			document.getElementById("p2").style.fontSize="19px";
+		}
+		function change_Color(){
+			document.getElementById("p1").style.color="green";
+			document.getElementById("p2").style.color="Orange";
+			document.getElementById("p3").style.color="Red";
+		}
+		function changbg_Color(){
+			document.getElementById("content").style.background="#81F7F3";
+		}
+		function copy_Content(){
+			document.getElementById("p1").innerHTML = document.getElementById("p2").innerHTML;
+		}
+	</script>
+	<div id = "content">
+		<h1>Đoạn văn</h1>
+		<p class="p1 paragraph" id="p1"> Mặt trăng tròn vành vạnh từ từ nhô lên sau luỹ tre. Trăng đêm nay sáng quá ! Bầu trời điểm xuyết một vài ngôi sao lấp lánh như những con đom đóm nhỏ. Ánh trăng tàng dịu mát tỏa xuống, chảy loang lổ trên mặt đất, trên các cành cây ngọn cỏ … </p>
+		<p class="p2 paragraph" id="p2">Trên không, vài con cò về tổ trễ đập nhanh đôi cánh trắng phau rồi khuất trong lùm cây rậm lá. Những đám mây trắng đá ngả màu ngà, bầu trời xanh cũng đã ngả sang màu sậm đưa đến màu đen. Đâu đó có tiếng chim lẻ bạn, tiếng dơi muỗi lào xào lẫn trong tiếng gió nhẹ lay cành. Dưới bến sông, con nước ròng lên đầy mé đã đứng lại không lùa được bóng nước.</p>
+		<p class="p3 paragraph" id="p3">Tôi khệ nệ bưng xô thức ăn đến bên chuồng. Cái thành chuồng cao tám tấc đối với tôi không phải là thấp. Chú lợn thấy xô thức ăn càng la hét nhiều hơn. Cái mũi đánh hơi khịt khịt, nhúc nha nhúc nhích trông thật tức cười. Đôi mắt ti hí cứ nhìn chằm chằm vào xô thức ăn. Thật là xấu nết. Tôi thầm rủa nó như vậy. Khi thức ăn được đổ vào máng, chú ta liền sục ngay cái mõm của mình vào, ngập đến gần hai con mắt.</p>
+	</div>
+	<input type="button" value="ChangeFontsize" onclick="change_Fontsize()"/>
+	<input type="button" value="increaseFontSize" onclick="increase_FontSize()"/>
+	<input type="button" value="decreaseFontSize" onclick="decrease_FontSize()"/>
+	<input type="button" value="changeColor()" onclick="change_Color()"/>
+	<input type="button" value="changbgColor" onclick="changbg_Color()"/>
+	<input type="button" value="copyContent" onclick="copy_Content()"/>
+</body>
+</html>
