@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM event</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<div class="wrap">
+	<form name="form" class="form">
+		<h1>Demo DOM Event</h1>
+		<input class="text" type="text" name="pheptinh" /><br/>
+		<input class="btn" type="button" value="7" onclick="number7();"/>
+		<input class="btn" type="button" value="8" onclick="number8();"/>
+		<input class="btn" type="button" value="9" onclick="number9();"/>
+		<input class="btn" type="button" value="+" onclick="cong();"/>
+		<br/>
+		<input class="btn" type="button" value="4" onclick="number4();"/>
+		<input class="btn" type="button" value="5" onclick="number5();"/>
+		<input class="btn" type="button" value="6" onclick="number6();"/>
+		<input class="btn" type="button" value="-" onclick="tru();"/>
+		<br/>
+		<input class="btn" type="button" value="1" onclick="number1();"/>
+		<input class="btn" type="button" value="2" onclick="number2();"/>
+		<input class="btn" type="button" value="3" onclick="number3();"/>
+		<input class="btn" type="button" value="x" onclick="nhan();"/>
+		<br/>
+		<input class="btn" type="button" value="." onclick="numbercham();"/>
+		<input class="btn" type="button" value="0" onclick="number0();"/>
+		<input class="btn" type="button" value="CLR" onclick="reset();"/>
+		<input class="btn" type="button" value="/" onclick="chia();"/>
+		<br/>
+		<input class="btn" type="button" value="x²" onclick="binhphuong();"/>
+		<input class="btn" type="button" value="x!" onclick="giaithua();"/>
+		<input class="btn" type="button" value="√" onclick="canbac2();"/>
+		<input class="btn" type="button" value="=" onclick="tinhtoan();">
+
+
+	</form>
+	<script type="text/javascript">
+		function number1(){document.form.pheptinh.value +="1";}
+		function number2(){document.form.pheptinh.value +="2";}
+		function number3(){document.form.pheptinh.value +="3";}
+		function number4(){document.form.pheptinh.value +="4";}
+		function number5(){document.form.pheptinh.value +="5";}
+		function number6(){document.form.pheptinh.value +="6";}
+		function number7(){document.form.pheptinh.value +="7";}
+		function number8(){document.form.pheptinh.value +="8";}
+		function number9(){document.form.pheptinh.value +="9";}
+		function number0(){document.form.pheptinh.value +="0";}
+		function numbercham(){document.form.pheptinh.value +=".";}
+
+		function cong(){document.form.pheptinh.value +="+";}
+		function tru(){document.form.pheptinh.value +="-";}
+		function nhan(){document.form.pheptinh.value +="*";}
+		function chia(){document.form.pheptinh.value +="/";}
+
+		function canbac2(){
+			var canb2 = Math.sqrt(form.pheptinh.value);
+			document.form.pheptinh.value=canb2;
+			document.write(pheptinh+tinh);
+		}
+
+
+		function giaithua(){
+			var giaithua1 = 1;
+			var number = form.pheptinh.value;
+			var n = number;
+			for (i = n; i>0 ; i--){
+				if (n>170)	{
+					form.pheptinh.value="Hey! that is too big for my pea brain";
+				}
+				else{
+					if (i==n){
+						giaithua1= i;
+					}
+					else{
+						giaithua1 = giaithua1*(i);
+					}
+					form.pheptinh.value=giaithua1;
+				}
+			}	
+			return giaithua1;
+		} 
+
+
+		function binhphuong(){
+			var bp = eval(document.form.pheptinh.value);
+			document.form.pheptinh.value=bp*bp;
+			document.write(pheptinh+tinh);
+		}
+
+		function tinhtoan(){
+			var tinh =  eval(document.form.pheptinh.value);
+			document.form.pheptinh.value=tinh;
+			document.write(pheptinh+tinh);
+		}
+		function reset(){
+			document.form.pheptinh.value = "";
+		}
+	</script>
+	</div>
+</body>
+</html>
